@@ -1,12 +1,17 @@
 import './App.css'
+import {BrowserRouter,Route, Routes} from "react-router-dom"
+import LoginPage from './pages/LoginPage'
 
 function App() {
 
   return (
     <>
-      <div>
-        nothing to see here so far
-      </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/auth" Component={LoginPage}/>
+    </Routes>
+    </BrowserRouter>
+    
     </>
   )
 }
